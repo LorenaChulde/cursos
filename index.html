@@ -83,12 +83,10 @@
                             placeholder="01">
                     </div>
                     <div class="mb-3">
-                        <label for="matter-teacher" class="form-label">Asignatura:</label>
-                        <select name="matter-teacher" id="matter-teacher">
-                            <option value="programacion">Programación</option>
-                            <option value="metodologias">Metodologías</option>
-                            <option value="base">Base de Datos</option>
+                        <label for="area-teacher" class="form-label">Area:</label>
+                        <select class="form-select form-select-lg" name="area-teacher" id="area-teacher">
                         </select>
+                      </div>
                         </div>
 
                 </div>
@@ -96,6 +94,54 @@
                     <button class="btn btn-primary" onclick="addTeacher()">Agregar profesor</button>
                 </div>
             </div>
+            <hr>
+            
+            <div class="card">
+                <div class="card-header">
+                    ACTIVIDADES
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="name-activity" class="form-label">Actividad:</label>
+                        <input type="text" name="name-activity" id="name-activity" class="form-control"
+                            placeholder="Deber">
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <button class="btn btn-primary" onclick="addActivity()">Agregar actividad</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="card">
+                <div class="card-header">
+                    LIBRO DE CONFIGURACIÓN DE CALIFICACIONES
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="value-gradebook" class="form-label">Valor:</label>
+                        <input type="text" name="value-gradebook" id="value-gradebook" class="form-control"
+                            placeholder="50%">
+                    </div>
+                    <div class="mb-3">
+                        <label for="course-gradebook" class="form-label">Curso:</label>
+                        <select class="form-select form-select-lg" name="course-gradebook" id="course-gradebook"></select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="activity-gradebook" class="form-label">Actividad:</label>
+                        <select class="form-select form-select-lg" name="activity-gradebook" id="activity-gradebook"></select>
+                     </div>
+                    <div class="mb-3">
+                        <label for="maximun-gradebook" class="form-label">Maxima nota:</label>
+                        <select class="form-select form-select-lg" name="maximun-gradebook" id="maximun-gradebook"></select>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button class="btn btn-primary" onclick="addGradeBookSetup()">Agregar actividad</button>
+                    </div>
+                    
+            </div>
+            <hr>
+            
         </div>
         <script>let exports = {}; </script>
         <script src="dist/main.js"></script>
